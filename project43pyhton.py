@@ -607,6 +607,13 @@ print('customers imported')
 
 
 
+record_a_new_company("Test company", "Test address 1","Test adress 2", "Test adress 3 ","Test adress 4","Test adress 5","Test postal code","Test VAT ID ", "Test bank account number ","Test bank account name")
+
+testcompanyprint = dbase.execute('''SELECT * FROM Company LIKE Test company''')
+print(testcompanyprint)
+
+
+
 
 #-------------To close the database-------------
 dbase.close()
