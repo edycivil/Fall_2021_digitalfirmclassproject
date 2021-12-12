@@ -1,6 +1,8 @@
 import sqlite3
 
 dbase = sqlite3.connect('tp10.db', isolation_level=None)
+
+
 print('Database opened')
 dbase.execute(''' 
                 INSERT INTO Students
@@ -22,5 +24,13 @@ dbase.execute('''
                 (course_id , session_date)
                 VALUES ('1', '2021-12-19T01:00:00+01:00')
             ''')
+
+print(dbase.execute('''SELECT * FROM Teachers''').fetchall())
+
+print(type(dbase.execute('''SELECT * FROM Teachers''').fetchall()))
+
+
+
 dbase.close()
 print('Database Closed')
+

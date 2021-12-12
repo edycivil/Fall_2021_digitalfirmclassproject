@@ -6,6 +6,12 @@ import sqlite3
 dbase = sqlite3.connect('tp10.db', isolation_level=None)
 print('Database opened')
 
+dbase.execute('''DROP TABLE IF EXISTS Students''')
+dbase.execute('''DROP TABLE IF EXISTS Teachers''')
+dbase.execute('''DROP TABLE IF EXISTS Courses''')
+dbase.execute('''DROP TABLE IF EXISTS Sessions''')
+
+
 # Students
 dbase.execute(''' CREATE TABLE IF NOT EXISTS Students (
     ID                  INTEGER PRIMARY KEY AUTOINCREMENT,
