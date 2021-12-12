@@ -95,6 +95,7 @@ async def grade_exam(payload: Request):
                 '''.format(str(values_dict['teacher_id'])))
 
   secret = secret_query.fetchall()[0][1]
+  #note: secret[0][1] you're getting the first row where id = {} in your database which is the [0] part and from that row you get the value at index [1] which is the secret column
 
   # Step 2: check if secret is effectively equal:
   
