@@ -1,8 +1,30 @@
 import sqlite3
 
+
+
+
+
+
+
+
 # We need to import the Request object as well:
 from fastapi import FastAPI, Request
 import uvicorn
+
+#a module is just one or more python files in a folder (and possibly subfolder) in some directory on your computer
+#any module can have none or several classes in it.
+
+#the difference between using just
+#1) import package
+#or
+#2) from some_package import class
+#is that you in 1 would need to write
+#new_object_variable = package.class()
+#while in 2) you could just write
+#new_object_variable = class()
+#
+#so you "import" more functions into python to keep track of, and if you have some of the same functions yourself you can get name collisions
+
 
 app = FastAPI()
 
