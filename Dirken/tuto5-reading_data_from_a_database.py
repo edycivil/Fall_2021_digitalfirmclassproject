@@ -56,6 +56,8 @@ def read_data_fetch():
 
 # Now, we have to use the read_data_fetch() function.
 print("Read data")
+
+
 print("print read_data_fetch() return data : " + str(read_data_fetch()))
 # Ok it works !
 
@@ -69,7 +71,7 @@ print("We have a list [] of 2 tuples () : " + str(records))
 #   (1, 'Georges', 'Clooney'),
 #   (2, 'Brad', 'Pitt')
 # ]
-
+print("------------")
 # Do you want to print the first tuple (first record in your SELECT query) ?"
 # We must start with the number 0, because a list starts at 0 and not 1.
 print("Do you want to print the first tuple (first record in your SELECT query) ?")
